@@ -1,4 +1,4 @@
-package com.tower;
+package com.tomhw;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -113,7 +113,8 @@ public class MainActivity extends Activity {
             modelState = recognizerOpen(recognizer, "/sdcard/handwriting-zh_CN.model");
             if (modelState != 1) {
                 System.out.println("model文件打开失败");
-                return;
+            }else{
+                System.out.println("model文件打开成功");
             }
         }
         
